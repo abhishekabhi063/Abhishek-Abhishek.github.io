@@ -1,8 +1,74 @@
-<html>
-  <head><title>My Personal Website</title></head>
-  <body>
-    <h1>Welcome to My Personal Website</h1>
-    <p>Hello! I am Abhishek, and this is a brief introduction about me.</p>
-    <p>More info about my work, projects, and contact details can go here.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abhishek Abhishek — Portfolio</title>
+  <style>
+    :root{
+      --bg:#0f1720; --card:#0b1220; --muted:#9aa5b1; --accent:#2dd4bf; --white:#eef2f6;
+      --maxw:900px; --radius:12px; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071029 0%, #071a2a 100%);color:var(--white)}
+    .wrap{max-width:var(--maxw);margin:40px auto;padding:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);box-shadow:0 8px 30px rgba(2,6,23,0.6);padding:28px}
+    header{display:flex;align-items:center;gap:18px}
+    .avatar{width:86px;height:86px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#60a5fa);flex:0 0 86px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#012;background:#fff2;border:2px solid rgba(255,255,255,0.06)}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:6px 0 16px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:18px}
+    .section{background:transparent;border-radius:10px;padding:16px}
+    .meta{font-size:0.95rem;color:var(--muted);margin-bottom:8px}
+    .projects ul{list-style:none;padding:0;margin:0}
+    .projects li{padding:10px;border-radius:8px;margin-bottom:8px;background:rgba(255,255,255,0.02)}
+    a.card-link{display:inline-block;padding:8px 12px;border-radius:8px;background:linear-gradient(90deg,var(--accent),#60a5fa);color:#042; text-decoration:none;font-weight:600}
+    footer{margin-top:22px;color:var(--muted);font-size:0.9rem;text-align:center}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:72px;height:72px}}
+  </style>
+</head>
+<body>
+  <div class="wrap card">
+    <header>
+      <div class="avatar">YN</div>
+      <div>
+        <h1>Abhishek Abhishek</h1>
+        <div class="meta">Title • Location • short contact (email)</div>
+        <p class="lead">Short one-sentence summary: researcher / developer working on X, Y, Z. Link to CV or contact below.</p>
+        <a class="card-link" href="#">Download CV</a>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main class="section">
+        <h3>About</h3>
+        <p>Write 2–4 sentences about background, interests, and current work. Mention main languages, tools, or research topics.</p>
+
+        <h3 style="margin-top:14px">Selected Projects</h3>
+        <div class="projects">
+          <ul>
+            <li><strong>Project A</strong> — One-line description. <a href="#" style="color:var(--accent)">Demo</a> · <a href="#" style="color:var(--accent)">Code</a></li>
+            <li><strong>Project B</strong> — One-line description. <a href="#" style="color:var(--accent)">Paper</a></li>
+            <li><strong>Project C</strong> — One-line description.</li>
+          </ul>
+        </div>
+
+        <h3 style="margin-top:14px">Publications & Talks</h3>
+        <p class="meta">List a few highlights with links or short citations.</p>
+      </main>
+
+      <aside class="section">
+        <h4>Skills</h4>
+        <p class="meta">Python, C/C++, Gammapy, Data analysis, CI/CD, LaTeX</p>
+
+        <h4 style="margin-top:12px">Contact</h4>
+        <p class="meta">Email: <a href="mailto:you@example.com" style="color:var(--accent)">you@example.com</a></p>
+
+        <h4 style="margin-top:12px">Social</h4>
+        <p class="meta"><a href="#" style="color:var(--accent)">GitHub</a> · <a href="#" style="color:var(--accent)">LinkedIn</a></p>
+      </aside>
+    </div>
+
+    <footer>Built with GitHub Pages • Last updated: Oct 2025</footer>
+  </div>
+</body>
 </html>
